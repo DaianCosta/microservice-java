@@ -8,13 +8,13 @@ Essa camada sera responsável por fazer o Load balance, tornando os serviços es
 Serviço responsável por prover segurança entre os serviços.
 
 ## Crud
-Serviço responsável por prover funcionalidades de crud de produto e publicador asyncrono na fila do rabbitmq, para que o serviço de pagamento possa consumir as devidas mensagens.
+Serviço responsável por prover as funcionalidades de crud de produto e publicador o produto criado na fila do rabbitmq, para que o serviço de pagamento possa consumir o produto de forma asyncrona.
 
 ## Pagamento
-Serviço responsável por prover funcionalidades de pagamento e consumo asyncro dos produtos cadastrados no serviço crud de produto.
+Serviço responsável por prover as funcionalidades de pagamento e consumo asyncro dos produtos cadastrados no serviço crud de produto.
 
 ## Rabbitmq
-Service Broker, responsável por gerenciar exchanges e queues
+Service Broker, responsável por gerenciar as exchanges e queues
 
 ## Tecnologias:
 Java 11\
@@ -25,7 +25,7 @@ Spring Data Jpa\
 Lombok\
 Mysql\
 Eureka discovery Server/Client\
-Spring cloud Gateway\
+Spring cloud Gateway
 
 
 ![alt text](./arquitetura-sring.png)
