@@ -1,0 +1,16 @@
+version: "3"
+services:
+  rabbitmq:
+    image: "bitnami/rabbitmq:latest"
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./data:/var/lib/rabbitmq
+      - ./data/logs:/var/log/rabbitmq
+    environment:
+      - RABBITMQ_ERLANG_COOKIE=secret_pass
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+volumes:
+  rabbitmq:
