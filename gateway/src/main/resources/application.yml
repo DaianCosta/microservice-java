@@ -8,15 +8,15 @@ spring:
     gateway:
       routes:
         - id: auth_route
-          uri: http://localhost:8083
+          uri: lb://auth
           predicates:
             - Path=/auth/**
         - id: pagamento_route
-          uri: http://localhost:8082
+          uri: lb://pagamento
           predicates:
             - Path=/pagamento/**
         - id: crud_route
-          uri: http://localhost:8081
+          uri: lb://crud
           predicates:
             - Path=/crud/**
 
