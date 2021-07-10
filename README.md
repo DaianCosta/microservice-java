@@ -14,18 +14,18 @@ Serviço responsável por prover funcionalidades de crud de produto e publicador
 Serviço responsável por prover funcionalidades de pagamento e consumo asyncro dos produtos cadastrados no serviço crud de produto.
 
 ## Rabbitmq
-Serviço Broker, responsável por gerenciar as exchanges e filas
+Service Broker, responsável por gerenciar exchanges e queues
 
 ## Tecnologias:
-Java 11
-Spring boot
-Spring security/JWT
-Spring HATEOAS
-Spring Data Jpa
-Lombok
-Mysql
-Eureka discovery Server/Client
-Spring cloud Gateway
+Java 11\
+Spring boot\
+Spring security/JWT\
+Spring HATEOAS\
+Spring Data Jpa\
+Lombok\
+Mysql\
+Eureka discovery Server/Client\
+Spring cloud Gateway\
 
 
 ![alt text](./arquitetura-sring.png)
